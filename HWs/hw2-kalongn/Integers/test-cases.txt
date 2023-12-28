@@ -1,0 +1,7 @@
+1. repr_convert('S', '2', 0x80000001) -> ffffffff
+2. repr_convert('S', '2', 0x80000000) -> 00000000
+3. repr_convert('2', '2', 0x59f2ca50) -> 59f2ca50
+4. repr_convert('F', '2', 0x00394812) -> error
+5. repr_convert('2', 'S', 0x80000000) -> undefined
+6. repr_convert('2', 'S', 0xffffffff) -> 80000001
+7. repr_convert('2', 'S', 0x00000000) -> 00000000

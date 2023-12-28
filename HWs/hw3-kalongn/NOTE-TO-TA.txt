@@ -1,0 +1,12 @@
+I've renamed the encrypt function since it is creating issue. it is having name collision with unistd.h encrypt function and will not compile.
+
+Instruction also unclear on the following
+1. encryption method
+    1. if both cipherText and PlaintText is null
+        - do we return -1 as ciphertext doesn't have space to fit PlaintText (my implementation atm)
+        - or do we return -2 as they are null
+    2. Edge cases 2:
+        - When we get an empty string, we need to make cipherText "Undefined__EOM__", 
+          but what if cipherText doesn't have space to fit "Undefined__EOM__"
+        - what do we return here, 0 or -1?
+    

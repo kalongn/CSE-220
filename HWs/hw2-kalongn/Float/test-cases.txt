@@ -1,0 +1,13 @@
+1. printf("f = %g\n", construct_float_sf(0x00, 0x81, 0x300000)); -> 5.5
+2. printf("f = %g\n", construct_float_sf(0x01, 0x81, 0x300000)); -> -5.5
+3. printf("f = %g\n", construct_float_sf(0x00, 0x7F, 0x200000)); -> 1.25
+4. printf("f = %g\n", construct_float_sf(0x01, 0x7F, 0x200000)); -> -1.25
+5. printf("f = %g\n", construct_float_sf(0x00, 0x76, 0x299B6F)); -> 0.002588
+6. printf("f = %g\n", construct_float_sf(0x01, 0x76, 0x299B6F)); -> -0.002588
+7. printf("f = %g\n", construct_float_sf(0x00, 0x89, 0xABCDEF)); -> 1374.44
+8. printf("f = %g\n", construct_float_sf(0x01, 0x89, 0xABCDEF)); -> -1374.44
+9. printf("f = %g\n", construct_float_sf(0x00, 0x90, 0x7973C0)); -> 255439
+10. printf("f = %g\n", construct_float_sf(0x01, 0x90, 0x7973C0)); -> -255439
+
+11. printf("f = %g\n", construct_float_sf(0x01, 0x7F, 0xFFFFFF)); -> -2
+12. printf("f = %g\n", construct_float_sf(0x00, 0x00, 0xFFFFFF)); -> 1.17549e-38

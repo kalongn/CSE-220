@@ -1,0 +1,59 @@
+1. GetBit() (0-indexed)
+    
+    GetBit(12, 2), Expected Output: 1 -> 0...1100 
+    GetBit(7, 0), Expected Output: 1 -> 0...0111
+    GetBit(8, 0), Expected Output: 0 -> 0...1000
+    GetBit(-5, 1), Expected Output: 1 -> 1....1011
+    GetBit(2147483647, 30), Expected Output: 1 -> 0111...1
+    GetBit(-2147483648, 31), Expected Output: 1 -> 1000...0
+
+2. SetBit() (0-indexed)
+
+    SetBit(12,0), Expected Output: 13
+    SetBit(12, 31), Expected Output: -2147483636
+    SetBit(-2147483648, 31), Expected Output: -2147483648
+    SetBit(0,0), Expected Output: 1
+    SetBit(0,31), Expected Output: -2147483648
+
+3. ClearBit() (0-indexed)
+
+    ClearBit(13, 0), Expected Output: 12
+    ClearBit(-2147483636,31) Expected Output: 12
+    ClearBit(-2147483648, 31) Expected Output: 0
+    ClearBit(0, 0) Expected Output: 0
+
+4. Reversbit()
+
+    Reversbit(1), Expected Output: -2147483648
+    Reversbit(-2147483648), Expected Output: 1
+
+5. CountBit()
+
+    CountBit(1), Expected Output: 1
+    CountBit(0), Expected Output: 0
+    CountBit(-1), Expected Output: 32
+
+6. PowerofTwo()
+
+    PowerofTwo(1), Expected Output : 1
+    PowerofTwo(2), Expected Output: 1
+    PowerofTwo(4), Expected Output: 1
+    PowerofTwo(4294967296), Expected Output: 1
+    PowerofTwo(0), Expected Output: 0
+    PowerofTwo(3), Expected Output: 0
+
+7. RotateLeft()
+
+    RotateLeft(12,1), Expected Output: 24
+    RotateLeft(-2147483648,1), Expected Output: 1
+    RotateLeft(-2147483647,2), Expected Output: 6
+    RotateLeft(-2147483648, 32), Expected Output: -2147483648
+    RotateLeft(-2147483648, 64), Expected Output: -2147483648
+
+8. RotateRight()
+
+    RotateRight(24,1), Expected Output: 12
+    RotateRight(1,1), Expected Output: -2147483648
+    RotateRight(6,2), Expected Output: -2147483647
+    RotateRight(6,32), Expected Output: 6
+    RotateRight(6,64), Expected Output: 6
